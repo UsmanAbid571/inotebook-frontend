@@ -1,9 +1,10 @@
 import React from 'react'
+import Notes from './notes'
 
 function Home() {
   return (
-    <div>
-      This is Home.
+    <div className="container">
+      <Notes/>
     </div>
   )
 }
