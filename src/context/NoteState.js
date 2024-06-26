@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const NoteState = (props) => {
     //Host URL here
-    const host = "http://localhost:5000"
+    const host = "https://myinotebook-backend.netlify.app"
 
     const notesInitial = []
     const [notes, setNotes] = useState(notesInitial)
