@@ -33,7 +33,7 @@ const Signup = () => {
        setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }
     return (
-        <div className='container'>
+        <div className='container col-md-5' style={{ marginTop: "150px",marginBottom: "150px" }}>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
