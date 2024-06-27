@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const NoteState = (props) => {
     //Host URL here
-    const host = "https://myinotebook-backend.netlify.app"
+    const host = "http://localhost:5000"
 
     const notesInitial = []
     const [notes, setNotes] = useState(notesInitial)
@@ -15,7 +15,7 @@ const NoteState = (props) => {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY3OTkwNzQ2MjYyYzg1ZTU2MmEwNWU4In0sImlhdCI6MTcxOTI5ODE3M30.__WOPsBnwtTYug78VkTi2kjVNNDPgrey6T0W9yjtO3M"
+                "auth-token": localStorage.getItem('token')
 
             }
         });
@@ -35,7 +35,7 @@ const NoteState = (props) => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY3OTkwNzQ2MjYyYzg1ZTU2MmEwNWU4In0sImlhdCI6MTcxOTI5ODE3M30.__WOPsBnwtTYug78VkTi2kjVNNDPgrey6T0W9yjtO3M"
+                "auth-token": localStorage.getItem('token')
 
             },
             body: JSON.stringify({ title, description, tag })
@@ -61,7 +61,7 @@ const NoteState = (props) => {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
-                "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY3OTkwNzQ2MjYyYzg1ZTU2MmEwNWU4In0sImlhdCI6MTcxOTI5ODE3M30.__WOPsBnwtTYug78VkTi2kjVNNDPgrey6T0W9yjtO3M"
+                "auth-token": localStorage.getItem('token')
 
             }
         });
@@ -80,7 +80,7 @@ const NoteState = (props) => {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
-                "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY3OTkwNzQ2MjYyYzg1ZTU2MmEwNWU4In0sImlhdCI6MTcxOTI5ODE3M30.__WOPsBnwtTYug78VkTi2kjVNNDPgrey6T0W9yjtO3M"
+                "auth-token": localStorage.getItem('token')
 
             },
             body: JSON.stringify({ id, title, description, tag })

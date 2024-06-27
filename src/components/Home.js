@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Notes from './notes'
+
 
 function Home() {
   return (
