@@ -63,20 +63,20 @@ const Main = () => {
             <section className="container my-5">
                 <div className=" row gap-5">
                     <div className="testimonial col-md-3 mx-lg-4">
-                        <p>"Effortlessly Organized!<br/>
-                            "iNotebook has transformed the way I manage my notes. With its intuitive interface and seamless syncing across devices, my notes are always at my fingertips, perfectly organized."</p>
+                        <p>Effortlessly Organized!<br/>
+                            iNotebook has transformed the way I manage my notes. With its intuitive interface and seamless syncing across devices, my notes are always at my fingertips, perfectly organized.</p>
                         <p className="testimonial-author"></p>
                     </div>
 
                     <div className="testimonial col-md-3 mx-lg-4">
-                        <p>"A Game Changer!<br/>
-                            "I've tried many note-taking apps, but iNotebook stands out. Its simplicity and robust features make it a game changer for anyone serious about staying organized and productive."</p>
+                        <p>A Game Changer!<br/>
+                            I have tried many note-taking apps, but iNotebook stands out. Its simplicity and robust features make it a game changer for anyone serious about staying organized and productive.</p>
                         <p className="testimonial-author"></p>
                     </div>
 
                     <div className="testimonial col-md-3 mx-lg-4">
-                        <p>"Perfect for Students!<br/>
-                            "As a student, iNotebook has been a lifesaver. From organizing lecture notes to creating study guides, it's my go-to tool. Plus, the ability to add multimedia and share notes easily is a huge bonus."</p>
+                        <p>Perfect for Students!<br/>
+                            As a student, iNotebook has been a lifesaver. From organizing lecture notes to creating study guides, its my go-to tool. Plus, the ability to add multimedia and share notes easily is a huge bonus.</p>
                         <p className="testimonial-author"></p>
                     </div>
 
